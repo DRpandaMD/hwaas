@@ -4,7 +4,7 @@
   "description": "Hello World as a Service - the ultimate in digital friendliness",
   "main": "app/index.js",
   "scripts": {
-    "build": "cp index-src.js app/index.js"
+    "build": "cp index-src.js app/index.js && cp -R public app/public"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/floyd-may/hwaas",
   "dependencies": {
-    "ejs": "^2.4.1"
+    "ejs": "2.6.1"
   }
 }

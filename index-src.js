@@ -1,3 +1,4 @@
+// File Changes to app made my Michael Zarate
 var http = require('http');
 var ejs = require('ejs');
 var fs = require('fs');
@@ -8,11 +9,11 @@ var server = http.createServer((req, res) => {
   fs.readFile('index.html', (err, data) => {
     var result = ejs.render(data.toString(), {
         version:'0.2',
-        host: os.hostname()
+        host: os.hostname(),
+        message: "A SaltStack Example for orchestration in AWS"
     });
     res.end(result);
   });
 });
 
 server.listen(8000);
-// superfluous edit

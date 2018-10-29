@@ -4,7 +4,7 @@
   "description": "Hello World as a Service - the ultimate in digital friendliness",
   "main": "app/index.js",
   "scripts": {
-    "build": "cp index-src.js app/index.js && cp -R public app/public"
+    "build": "cp index-src.js app/index.js"
   },
   "repository": {
     "type": "git",
